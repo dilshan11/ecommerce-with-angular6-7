@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <table class="table">
+            <thead>
+              <tr>
+                 
+                <th scope="col">name</th>
+                <th scope="col">Date</th>
+                <th scope="col"></th>
+                
+            </thead>
+            <tbody>
+              <tr *ngFor="let a of orderlist">
+                <td>{{a.name}}</td>
+                <td>{{a.date}}</td>
+                <td><button type="button" class="btn btn-warning" (click)=view(a.uid)>view</button></td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+  </div>
+</div>

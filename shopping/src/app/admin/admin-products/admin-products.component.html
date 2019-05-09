@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 newpro">
+        <button  class="btn btn-primary bottom" routerLink="/admin/products/new"  >new Products</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 newpro">
+        
+    </div>
+    <div class="col-md-8">
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+         
+        <th scope="col">Title</th>
+        <th scope="col">Price</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of product">
+        <td>{{a.title}}</td>
+        <td>{{a.price}}</td>
+        <td><a [routerLink]="['/admin/products/',a.id]">Edit</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="col-md-2"></div>
+</div>
+</div>

@@ -1,0 +1,45 @@
+ 
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+        <table class="table">
+            <thead>
+              <tr>
+                 
+                <th scope="col">product</th>
+                <th scope="col">unit price</th>
+                <th scope="col">quantity</th>
+                <th scope="col">price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let a of myarray">
+                <td>{{a.title}}</td>
+                <td>{{a.price}}</td>
+                <td>{{a.amount}}</td>
+                <td>{{a.adding}}</td>
+              </tr>
+              <tr>
+                  <td> </td>
+                  <!-- <td><button type="button" class="btn btn-warning">Reset</button></td> -->
+                  <td><button *ngIf="isbutton" type="button" class="btn btn-warning" (click)=saveorder()>save</button></td>
+                  <td>{{a}}</td>
+                </tr>
+            </tbody>
+          </table>
+          <div class="list-group" *ngIf="issuck" >
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">thank you</h5>
+      <small>order</small>
+    </div>
+    <p class="mb-1">your order is succesfull</p>
+    <small>best e commerce for you</small>
+  </a>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

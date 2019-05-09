@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+          <table class="table">
+              <thead>
+                <tr>
+                   
+                  <th scope="col">product name</th>
+                  <th scope="col">quantity</th>
+                  <th scope="col"></th>
+                  
+              </thead>
+              <tbody>
+                <tr *ngFor="let a of produstlist">
+                  <td>{{a.title}}</td>
+                  <td>{{a.amount}}</td>
+                  <td></td>
+                  
+                </tr>
+                
+              </tbody>
+            </table>
+            
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary" (click)=confirm()>confirm</button>
+          </div>
+    </div>
+</div>
